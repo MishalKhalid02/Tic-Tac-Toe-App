@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"></link>
+</head>
+<body>
+    <h1>
+        EVENTS
+    </h1>
+    <h2>
+        if both inline handling and js handling is done on one single(e.g:button) then jsone will be executed
+    </h2>
+
+    <h3>
+        1. InLine Event Handling: this is not a good way of handling events in .js (js8.js) should be handled 
+    </h3>
+    <!-- <button onclick="console.log('Button was clicked');alert('hello')">
+        CLick HERE
+    </button> -->
+   
+
+    <button ondblclick="console.log('Button was clicked 2 times');alert('hello')">
+        CLick 2 times
+    </button>
+
+    <!-- yahan yeh dekh rahe ke pointe kitni br hover karega is div print
+    or MDN events pr sar events show hote hain
+    -->
+    <div onmouseover="console.log('inside a div(hover)')">
+        this is a box
+    </div>
+
+    <h3> Events Lecture end</h3>
+<br>
+     <h3>2. using .js</h3>
+    <button id="btn1">
+        BTN1
+    </button>
+
+    <div id="div1">
+        this a div
+    </div>
+    <h3>
+        drwaback at a time ek function ke through ek hi evet ko handle kr skte hain
+    </h3>
+
+    <br>
+
+    <h3>
+        Event Listener (iske through hum same event pr multiple aam krw SKTE HAIN)
+    </h3>
+    <button id="btn2">
+        BTN2
+    </button>
+
+    <h1 ><b>
+        Practice (Toogle Button for dark and light mode)
+    </b></h1>
+
+    <button id="chng_mode">
+        Change mode
+    </button>
+
+    <div id="div">
+        this is div by using mousehover and events i am gonna do something
+    </div>
+
+    <!-- <p class="paragraph">i am a paragraph</p> -->
+    <!-- <div id="box" name="jsdiv">
+        this is a div
+        <ul>
+            list
+            <li>MAngo</li>
+            <li>apple</li>
+            <li>orange</li>
+        </ul>
+    </div>
+        <p>leaning JS and moving towards DOM</p> -->
+
+    <!-- <img src="C:\Users\USER\Desktop\Screenshot 2026-02-26 022655.png" id="img"></img> -->
+    <!-- <div>
+        <h3>Fruits</h3>
+        <ul>
+            <li>MAngo</li>
+            <li>apple</li>
+            <li>orange</li>
+        </ul>
+    </div>
+id unique sbke liye lakin agr sam hi changes bhut sare tags mein krne hon toh class use krte hain
+   <div>
+<h1 id="heading">DOM</h1>
+        <h1 class="heading-1">Hi</h1>
+            <h1 class="heading-1">Hello</h1>
+                <h1 class="heading-1">Hey</h1>
+
+</div>
+    <p>leaning JS and moving towards DOM</p>
+    <p>ABOUt DOM : html ko js mein access krte hoe woh js meina kr objects mein convert hojte hain jisse documnet object kehte hain or yeh window object mein hota hai 
+        <br>console.log  print  ----> 
+       
+        <!-- <br>console.dir  (special objects like document)  properties and methods ko display krta hai  
+    </p> --> 
+
+    <!-- <h2 id="h2">HELLO JAVASCRIPT</h2>
+
+    <div class="box">firstDiv</div>
+        <div class="box">f2ndDiv</div>
+            <div class="box">3rdDIV</div>
+
+    <button>Click me!</button> -->
+    <script src="js1.js"></script>
+    <script src="js2.js"></script>
+    <script src="js3.js"></script>
+    <script src="js4.js"></script>
+    <script src="js5.js"></script>
+    <script src="js6.js"></script>
+    <script src="js7.js"></script>
+        <script src="js8.js"></script>
+
+<!-- window object 
+ is created by thr brower consol.log is a window object but we dont write 
+ it like this window.consolw.log because it is a global object the js knows it so dont have to specify-->
+</body>
+</html>
